@@ -16,7 +16,6 @@
     'main main main main aside aside'
     'footer footer footer footer footer footer';
     grid-gap: 10px;
-    background-color: #2196F3;
     padding: 10px;
 }
 
@@ -49,28 +48,79 @@
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
     padding: 20px 0;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
 .Logo {
     border: 1px solid rgb(140, 129, 209);
+    margin-left: 10px;
 }
 
 .MainMenu {
     border: 1px solid slateblue;
+    margin-right: 10px;
+    display: grid;
+}
+
+.loginNav a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #000;
+}
+
+.loginNav a:hover {
+    background-color: gray;
+}
+
+.loginNav ul {
+    list-style: none;
+}
+
+.loginNav ul li {
+    display: inline;
+    float: right;
+}
+
+.mainNav a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #000;
+}
+
+.mainNav a:hover {
+    background-color: gray;
+}
+
+.mainNav ul {
+    list-style: none;
+}
+
+.mainNav ul li {
+    display: inline;
+    float: right;
 }
 
 .Subtitle {
     border: 1px solid slateblue;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .SecondMenu {
     border: 1px solid slateblue;
+    margin-left: 10px;
 }
 
 .SelectLanguage {
     border: 1px solid slateblue;
+    margin-right: 10px;
 }
 
 /* END HEADER */
