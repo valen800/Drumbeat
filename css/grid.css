@@ -41,7 +41,7 @@
     'logo logo logo mainMenu mainMenu mainMenu'
     'subtitle subtitle subtitle subtitle subtitle subtitle'
     'secondMenu secondMenu secondMenu secondMenu selectLanguage selectLanguage';
-    grid-gap: 1px;
+    grid-gap: 10px;
     background-color: #2196F3;
 }
 
@@ -49,10 +49,12 @@
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
     padding: 20px 0;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .Logo {
-    border: 1px solid slateblue;
+    border: 1px solid rgb(140, 129, 209);
 }
 
 .MainMenu {
@@ -86,7 +88,7 @@
     'program program program program program program'
     'whatAllAbout whatAllAbout whatAllAbout schedule schedule schedule'
     'festivalSpaces festivalSpaces festivalSpaces festivalSpaces festivalSpaces festivalSpaces';
-    grid-gap: 1px;
+    grid-gap: 10px;
     background-color: #2196F3;
 }
 
@@ -98,14 +100,18 @@
 
 .Program {
     border: 1px solid slateblue;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .WhatAllAbout {
     border: 1px solid slateblue;
+    margin-left: 10px;
 }
 
 .Schedule {
     border: 1px solid slateblue;
+    margin-right: 10px;
 }
 
 /* FESTIVAL SPACES */
@@ -115,6 +121,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .FestivalSpaces > div {
@@ -131,7 +139,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 100px 400px 500px 100px;
-    grid-gap: 1px;
+    grid-gap: 10px;
 }
 
 .Aside > div{
@@ -139,6 +147,8 @@
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
     padding: 20px 0;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 /* END ASIDE */
@@ -148,7 +158,7 @@
 .Footer {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 1px;
+    grid-gap: 10px;
 }
 
 .Footer > div{
@@ -156,6 +166,8 @@
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
     padding: 20px 0;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 /* END FOOTER */
