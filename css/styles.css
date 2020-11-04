@@ -1,0 +1,161 @@
+/* GENERAL */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.Header {grid-area: header;}
+.Main {grid-area: main;}
+.Aside {grid-area: aside;}
+.Footer {grid-area: footer;}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+    'header header header header header header'
+    'main main main main aside aside'
+    'footer footer footer footer footer footer';
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+}
+/* END GENERAL */
+
+/* HEADER */
+
+.Logo {grid-area: logo;}
+.MainMenu {grid-area: mainMenu;}
+.Subtitle {grid-area: subtitle;}
+.SecondMenu {grid-area: secondMenu;}
+.SelectLanguage {grid-area: selectLanguage;}
+
+.Header {
+    display: grid;
+    grid-template-areas:
+    'logo logo logo mainMenu mainMenu mainMenu'
+    'subtitle subtitle subtitle subtitle subtitle subtitle'
+    'secondMenu secondMenu secondMenu secondMenu selectLanguage selectLanguage';
+    grid-gap: 1px;
+    background-color: #2196F3;
+}
+
+.Header > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+}
+
+.Logo {
+    border: 1px solid slateblue;
+}
+
+.MainMenu {
+    border: 1px solid slateblue;
+}
+
+.Subtitle {
+    border: 1px solid slateblue;
+}
+
+.SecondMenu {
+    border: 1px solid slateblue;
+}
+
+.SelectLanguage {
+    border: 1px solid slateblue;
+}
+
+/* END HEADER */
+
+/* MAIN */
+
+.Program {grid-area: program;}
+.WhatAllAbout {grid-area: whatAllAbout;}
+.Schedule {grid-area: schedule;}
+.FestivalSpaces {grid-area: festivalSpaces;}
+
+.Main {
+    display: grid;
+    grid-template-areas: 
+    'program program program program program program'
+    'whatAllAbout whatAllAbout whatAllAbout schedule schedule schedule'
+    'festivalSpaces festivalSpaces festivalSpaces festivalSpaces festivalSpaces festivalSpaces';
+    grid-gap: 1px;
+    background-color: #2196F3;
+}
+
+.Main > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+}
+
+.Program {
+    border: 1px solid slateblue;
+}
+
+.WhatAllAbout {
+    border: 1px solid slateblue;
+}
+
+.Schedule {
+    border: 1px solid slateblue;
+}
+
+/* FESTIVAL SPACES */
+
+.FestivalSpaces {
+    border: 1px solid slateblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.FestivalSpaces > div {
+    border: 1px solid slateblue;
+}
+
+/* END FESTIVAL SPACES */
+
+/* END MAIN */
+
+/* ASIDE */
+
+.Aside {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 400px 500px 100px;
+    grid-gap: 1px;
+}
+
+.Aside > div{
+    border: 1px solid slateblue;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* END ASIDE */
+
+/* FOOTER */
+
+.Footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1px;
+}
+
+.Footer > div{
+    border: 1px solid slateblue;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* END FOOTER */
