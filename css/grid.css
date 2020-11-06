@@ -15,8 +15,8 @@
     'header header header header header header'
     'main main main main aside aside'
     'footer footer footer footer footer footer';
-    margin-right: 22%;
-    margin-left: 22%;
+    margin-right: 24%;
+    margin-left: 24%;
     padding: 10px;
 }
 
@@ -33,14 +33,14 @@
 .MainMenu {grid-area: mainMenu;}
 .Subtitle {grid-area: subtitle;}
 .SecondMenu {grid-area: secondMenu;}
-.SelectLanguage {grid-area: selectLanguage;}
+/* .SelectLanguage {grid-area: selectLanguage;} */
 
 .Header {
     display: grid;
     grid-template-areas:
-    'logo logo logo mainMenu mainMenu mainMenu'
+    'logo logo mainMenu mainMenu mainMenu mainMenu'
     'subtitle subtitle subtitle subtitle subtitle subtitle'
-    'secondMenu secondMenu secondMenu secondMenu selectLanguage selectLanguage';
+    'secondMenu secondMenu secondMenu secondMenu secondMenu secondMenu';
     background-color: #2196F3;
 }
 
@@ -52,7 +52,11 @@
 
 .Logo {
     border: 1px solid rgb(140, 129, 209);
+    padding-right: 100px;
+}
 
+.Logo > img {
+    float: left;
 }
 
 .MainMenu {
@@ -93,7 +97,7 @@
     text-decoration: none;
     font-size: 24px;
     color: #000;
-    background-color: lightgray;
+    background-color: #E9E9E9;
     margin-left: 5px;
     border-radius: 5px;
 
@@ -120,13 +124,57 @@
     border: 1px solid slateblue;
 }
 
+.Subtitle h1 {
+    text-align: left;
+    color: #077782;
+}
+
 .SecondMenu {
     border: 1px solid slateblue;
 }
 
-.SelectLanguage {
-    border: 1px solid slateblue;
+.SecondMenu a {
+    text-align: center;
+    color: #000;
+    background-color: #E9E9E9;
+    margin-right: 3px !important;
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+    padding: 10px !important;
+    text-decoration: none;
+    position: relative;
+
 }
+
+.SecondMenu a:hover, .active {
+    font-weight: bold;
+}
+
+.SecondMenu a:hover::after {
+    content: "";
+    display: block;
+    border: 12px solid transparent;
+    border-top-color:#E9E9E9; 
+    position: absolute;
+    bottom: 0px;
+    top: 37px;
+    left: 50%;
+    margin-left: -12px;
+}
+
+.SecondMenu > ul {
+    float: left;
+    list-style: none;
+}
+
+.SecondMenu > ul > li {
+    display: inline;
+}
+
+.SecondMenu a {
+    text-decoration: none;
+}
+
 
 /* END HEADER */
 
