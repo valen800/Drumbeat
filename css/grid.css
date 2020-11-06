@@ -51,7 +51,6 @@
 }
 
 .Logo {
-    border: 1px solid rgb(140, 129, 209);
     padding-right: 100px;
 }
 
@@ -60,7 +59,6 @@
 }
 
 .MainMenu {
-    border: 1px solid slateblue;
     display: grid;
 }
 
@@ -120,18 +118,11 @@
     float: right;
 }
 
-.Subtitle {
-    border: 1px solid slateblue;
-}
-
 .Subtitle h1 {
     text-align: justify;
     color: #077782;
 }
 
-.SecondMenu {
-    border: 1px solid slateblue;
-}
 /* ARROW SECOND MENU */
 .SecondMenu a {
     text-align: center;
@@ -221,9 +212,6 @@ input.tgl-radio-tab-child+label:hover {
 }
 
 /* PROGRAM SIDE */
-.Program {
-    border: 1px solid slateblue;
-}
 
 .program-title {
     color: #4ebec9;
@@ -256,10 +244,6 @@ input.tgl-radio-tab-child+label:hover {
 
 /* SCHEDULE */
 
-.Schedule {
-    border: 1px solid slateblue;
-}
-
 .schedule-title {
     color: #077782;
     margin-bottom: 10px;
@@ -272,10 +256,6 @@ input.tgl-radio-tab-child+label:hover {
 /* END SCHEDULE */
 
 /* FESTIVAL SPACES */
-
-.FestivalSpaces {
-    border: 1px solid slateblue;
-}
 
 .festival-title {
     color: #077782;
@@ -332,7 +312,6 @@ input.tgl-radio-tab-child+label:hover {
 }
 
 .Aside > div{
-    border: 1px solid slateblue;
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
     padding: 20px 0;
