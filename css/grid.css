@@ -132,7 +132,7 @@
 .SecondMenu {
     border: 1px solid slateblue;
 }
-
+/* ARROW SECOND MENU */
 .SecondMenu a {
     text-align: center;
     color: #000;
@@ -142,7 +142,7 @@
     border-top-right-radius: 20px !important;
     padding: 10px !important;
     text-decoration: none;
-    position: relative;
+    position: relative; /* Arrow position important*/
 
 }
 
@@ -161,6 +161,7 @@
     left: 50%;
     margin-left: -12px;
 }
+/* ARROW SECOND MENU */
 
 .SecondMenu > ul {
     float: left;
@@ -175,6 +176,34 @@
     text-decoration: none;
 }
 
+input.tgl-radio-tab-child {
+    position: absolute;
+    left: -99999em;
+    top: -99999em;
+    opacity: 1;
+    z-index: 1;
+}
+  
+input.tgl-radio-tab-child+label {
+    cursor: pointer;
+    border: 1px solid #aaa;
+    padding: 2px;
+    margin-right: -5px;
+}
+  
+input.tgl-radio-tab-child+label:hover {
+    background-color: #eee;
+}
+  
+[type=radio]:checked+label {
+    background-color: #aaa;
+    z-index: 1;
+}
+
+.SecondMenu hr {
+    width: 100%;
+    margin-top: 0.9%
+}
 
 /* END HEADER */
 
