@@ -1,7 +1,7 @@
 /* GENERAL */
 * {
 	margin: 0;
-	padding: 0;
+    padding: 0;
 }
 
 .Header {grid-area: header;}
@@ -125,7 +125,7 @@
 }
 
 .Subtitle h1 {
-    text-align: left;
+    text-align: justify;
     color: #077782;
 }
 
@@ -210,7 +210,6 @@ input.tgl-radio-tab-child+label:hover {
 /* MAIN */
 
 .Program {grid-area: program;}
-.WhatAllAbout {grid-area: whatAllAbout;}
 .Schedule {grid-area: schedule;}
 .FestivalSpaces {grid-area: festivalSpaces;}
 
@@ -218,7 +217,7 @@ input.tgl-radio-tab-child+label:hover {
     display: grid;
     grid-template-areas: 
     'program program program program program program'
-    'whatAllAbout whatAllAbout whatAllAbout schedule schedule schedule'
+    'schedule schedule schedule schedule schedule schedule'
     'festivalSpaces festivalSpaces festivalSpaces festivalSpaces festivalSpaces festivalSpaces';
     background-color: #2196F3;
 }
@@ -226,32 +225,96 @@ input.tgl-radio-tab-child+label:hover {
 .Main > div {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
-    padding: 20px 0;
+    padding: 20px;
 }
 
+/* PROGRAM SIDE */
 .Program {
     border: 1px solid slateblue;
-
 }
 
-.WhatAllAbout {
-    border: 1px solid slateblue;
+.program-title {
+    color: #4ebec9;
 }
+
+.main-content{
+    margin: 0 auto;
+    clear: both;
+    display: flex;
+}
+
+.program-content {
+    vertical-align:middle;
+}
+
+.program-content > p{
+    margin-top: 15px;
+}
+
+.program-img > img{
+    display: block;
+    margin: 10px 50px 10px 50px;  /* Top Right Bottom left */
+}
+
+.Program > * {
+    text-align: justify;
+}
+
+/* END PROGRAM SIDE */
+
+/* SCHEDULE */
 
 .Schedule {
     border: 1px solid slateblue;
 }
 
+.schedule-title {
+    color: #077782;
+    margin-bottom: 10px;
+}
+
+.Schedule > * {
+    text-align: justify;
+}
+
+/* END SCHEDULE */
+
 /* FESTIVAL SPACES */
 
 .FestivalSpaces {
     border: 1px solid slateblue;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
 }
 
-.FestivalSpaces > div {
+.festival-title {
+    color: #077782;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.festival-text {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.festival-boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+}
+
+.festival-boxes > div {
     border: 1px solid slateblue;
+    width: 100%;
+    height: 180px;
+    text-align: justify;
+}
+
+.festival-boxes > div > h2 {
+    color: #3d5e7a;
+}
+
+.festival-boxes > div > * {
+    margin: 15px;
 }
 
 /* END FESTIVAL SPACES */
@@ -263,7 +326,7 @@ input.tgl-radio-tab-child+label:hover {
 .Aside {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 400px 500px 100px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .Aside > div{
