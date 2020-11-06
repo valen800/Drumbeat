@@ -14,7 +14,7 @@
     grid-template-areas: 
     'header header header header header header'
     'main main main main aside aside'
-    'footer footer footer footer footer footer';
+    'footer footer footer footer footer footer ';
     margin-right: 24%;
     margin-left: 24%;
     padding: 10px;
@@ -309,6 +309,16 @@ input.tgl-radio-tab-child+label:hover {
     margin: 15px;
 }
 
+.festival-places-end-text {
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.festival-last-title {
+    margin-top: 10px;
+    color: #4ebec9;
+}
+
 /* END FESTIVAL SPACES */
 
 /* END MAIN */
@@ -477,15 +487,29 @@ input.tgl-radio-tab-child+label:hover {
 /* FOOTER */
 
 .Footer {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
 }
 
-.Footer > div{
-    border: 1px solid slateblue;
-    background-color: rgba(255, 255, 255, 0.8);
+.Footer > div {
+    background-color: #7a7771;
     text-align: center;
     padding: 20px 0;
+}
+
+.Footer ul {
+    list-style: none;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.Footer ul li {
+    color: #fff;
+    text-align: justify;
+}
+
+.footer-policy-text ul li{
+    color: #000;
+    text-align: right;
 }
 
 /* END FOOTER */
