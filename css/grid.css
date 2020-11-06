@@ -209,16 +209,8 @@ input.tgl-radio-tab-child+label:hover {
 
 /* MAIN */
 
-.Program {grid-area: program;}
-.Schedule {grid-area: schedule;}
-.FestivalSpaces {grid-area: festivalSpaces;}
-
 .Main {
     display: grid;
-    grid-template-areas: 
-    'program program program program program program'
-    'schedule schedule schedule schedule schedule schedule'
-    'festivalSpaces festivalSpaces festivalSpaces festivalSpaces festivalSpaces festivalSpaces';
     background-color: #2196F3;
 }
 
@@ -299,14 +291,14 @@ input.tgl-radio-tab-child+label:hover {
 .festival-boxes {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 50px;
+    grid-gap: 30px;
 }
 
 .festival-boxes > div {
     border: 1px solid slateblue;
     width: 100%;
     height: 180px;
-    text-align: justify;
+    text-align: left;
 }
 
 .festival-boxes > div > h2 {
@@ -325,8 +317,8 @@ input.tgl-radio-tab-child+label:hover {
 
 .Aside {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 340px;
+    grid-template-rows: 130px 220px 470px 1fr 1fr;
 }
 
 .Aside > div{
@@ -334,6 +326,150 @@ input.tgl-radio-tab-child+label:hover {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
     padding: 20px 0;
+}
+
+.Aside .Register {
+    background-color: #99cdff;
+    border-radius: 10px;
+}
+
+.Aside .Register > button {
+    height: 70px;
+    width: 300px;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: #000;
+    background-color: #8bcf68;
+    color: #fff;
+    margin-bottom: 10px;
+    box-shadow: #000;
+}
+
+.Aside .Register > p {
+    color:#0077EE;
+}
+
+.WhatAllAbout > *{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.WhatAllAbout > h3{
+    text-align: justify;
+    color: #077782;
+}
+
+.WhatAllAbout > p, a{
+    text-align: justify;
+    text-decoration: none;
+}
+
+.Aside-list > *{
+    background-color: #E9E9E9;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 2px;
+}
+
+.Aside-list ul li {
+    margin: 0 auto;
+    clear: both;
+    display: flex;
+    margin-bottom: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
+}
+
+.Aside-list ul li > p{
+    margin-left: 10px;
+}
+
+.Aside-WhoShouldCome-content {
+    background-color: #FFFDC8;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: #000;
+}
+
+.Aside-WhoShouldCome > * {
+    text-align: justify;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.Aside-WhoShouldCome h1{
+    color: #9a181b;
+    text-align: left;
+}
+
+.Aside-WhoShouldCome ul{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.Aside-WhoShouldCome ul li{
+    list-style: none;
+    margin: 0 auto;
+    clear: both;
+    display: flex;
+}
+
+.Aside-Networks > * {
+    text-align: justify;
+}
+
+.Aside-Networks ul{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    list-style: none;
+}
+
+.Aside-Networks .identica {
+    clear: both;
+    display: flex;
+    width: 220px;
+
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+
+    border-radius: 10px;
+    background-color: #7db4c9;
+}
+
+.Aside-Networks .twitter {
+    clear: both;
+    display: flex;
+    width: 220px;
+
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    
+    border-radius: 10px;
+    background-color: #00bcff;
+}
+
+.Aside-Networks .identica:hover {
+    background-color: #8bcf68;
+}
+
+.Aside-Networks .twitter:hover {
+    background-color: #8bcf68;
+}
+
+.Aside-Networks .identica p{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.Aside-Networks .twitter p{
+    margin-top: 10px;
+    margin-left: 40px;
+    text-align: center;
 }
 
 /* END ASIDE */
