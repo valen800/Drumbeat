@@ -503,13 +503,21 @@ input.tgl-radio-tab-child+label:hover {
 }
 
 .Footer ul li {
-    color: #fff;
-    text-align: justify;
+    margin: 0 auto;
+    clear: both;
+    display: flex;
+    margin-top: 10px;
 }
 
-.footer-policy-text ul li{
+.Footer ul li > p{
+    color: #fff;
+    margin-left: 10px;
+}
+
+.footer-policy-text  ul li > p{
     color: #000;
     text-align: right;
 }
+
 
 /* END FOOTER */
